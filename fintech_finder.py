@@ -139,8 +139,8 @@ st.sidebar.write(account.address)
 # customer’s account. Inside this function, call the `get_balance` function and
 #  pass it your Ethereum `account.address`.
 
-st.sidebar.write("Your ether Balance:")
-st.sidebar.write(get_balance(account.address))
+ether_balance = get_balance(account.address)
+st.sidebar.write(ether_balance)
 
 
 ##########################################
@@ -230,7 +230,7 @@ st.sidebar.markdown("## Total Wage in Ether")
 
 wage = hourly_rate * hours
 
-st.sidebar.write(f"Wage: {wage}")
+st.sidebar.write(wage)
 
 ##########################################
 # Step 2 - Part 2:
